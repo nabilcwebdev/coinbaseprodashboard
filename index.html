@@ -12,44 +12,226 @@
 
   <title>Coinbase Pro Portfolio Dashboard</title>
 </head>
+<header class="container">
+  <h1 class="text-center thickborders btn-dark">Portfolio Dashboard (Coinbase Pro)</h1>
+</header>
 
 <body>
   <div>
-  	<h1 class="text-center thickborders">≡ Coinbase Pro Portfolio Dashboard ≡</h1>
     <div class="container">
       <div class="row">
-        <div class="row col-lg-8">
-          <h3 class="text-center col-lg-3 thickborders">Net Cash Investment</h3>
-          <h3 class="text-center col-lg-3 thickborders">Realized G/L</h3>
-          <h3 class="text-center col-lg-3 thickborders">Unrealized G/L</h3>
-          <h3 class="text-center col-lg-3 thickborders">Current Value</h3>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 class="text-center col-lg-12 col-md-7 col-7 thickborders btn-dark">Net Investment</h2>
+          <h3 class="text-right col-lg-12 col-md-5 col-5 thickborders btn-dark">$7,500.00</h3>
         </div>
-        <div class="row col-lg-4">
-          <h3 class="text-center col-md-4 thickborders">Total G/L</h3>
-          <h3 class="text-center col-lg-4 thickborders">Est. Taxes</h3>
-          <h3 class="text-center col-lg-4 thickborders">Net G/L</h3>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 class="text-center col-lg-12 col-md-7 col-7 thickborders btn-dark">Realized G/L</h2>
+          <h2 class="text-right col-lg-12 col-md-5 col-5 thickborders btn-dark">$226.67</h2>
         </div>
-      </div>
-      <div class="row">
-        <div class="row col-lg-8">
-          <h3 class="text-center col-lg-3 thickborders">$6,835.41</h3>
-          <h3 class="text-center col-lg-3 thickborders">$226.67</h3>
-          <h3 class="text-center col-lg-3 thickborders">$11.83</h3>
-          <h3 class="text-center col-lg-3 thickborders">$7,073.91</h3>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 class="text-center col-lg-12 col-md-7 col-7 thickborders btn-dark">Unrealized G/L</h2>
+          <h2 class="text-right col-lg-12 col-md-5 col-5 thickborders btn-dark">$11.83</h2>
         </div>
-        <div class="row col-lg-4">
-          <h3 class="text-center col-md-4 thickborders">$238.50</h3>
-          <h3 class="text-center col-lg-4 thickborders">$52.47</h3>
-          <h3 class="text-center col-lg-4 thickborders">$186.03</h3>
+        <div class="col-lg-3 col-md-6 col-12">
+          <h2 class="text-center col-lg-12 col-md-7 col-7 thickborders btn-dark">Current Value</h2>
+          <h2 class="text-right col-lg-12 col-md-5 col-5 thickborders btn-dark">$7,738.50</h2>
         </div>
       </div>
     </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <table class="table table-striped table-dark thickborders">
+
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Pair</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Current Value</th>
+                <th scope="col">Change %</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <th>BTC/USD</th>
+                <td>$2,500.00</td>
+                <td>$2,738.50</td>
+                <td>9.54%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <th>LTC/USD</th>
+                <td>$2,000.00</td>
+                <td>$1,900.00</td>
+                <td id="negative">(5.00%)</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <th>LINK/USD</th>
+                <td>$1,500.00</td>
+                <td>$1,500.00</td>
+                <td>0.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <th>ETH/USD</th>
+                <td>$500.00</td>
+                <td>$550.00</td>
+                <td>10.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <th>ATOM/USD</th>
+                <td>$500.00</td>
+                <td>$500.00</td>
+                <td>0.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <th>KNC/USD</th>
+                <td>$500.00</td>
+                <td>$550.00</td>
+                <td>10.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">-</th>
+                <th>Total</th>
+                <td>$7,500.00</td>
+                <td>$7,738.50</td>
+                <td>9.54%</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-striped table-dark thickborders">
+
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Pair</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Current Value</th>
+                <th scope="col">Change %</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <th>BTC/USD</th>
+                <td>$2,500.00</td>
+                <td>$2,738.50</td>
+                <td>9.54%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <th>LTC/USD</th>
+                <td>$2,000.00</td>
+                <td>$1,900.00</td>
+                <td id="negative">(5.00%)</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <th>LINK/USD</th>
+                <td>$1,500.00</td>
+                <td>$1,500.00</td>
+                <td>0.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <th>ETH/USD</th>
+                <td>$500.00</td>
+                <td>$550.00</td>
+                <td>10.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <th>ATOM/USD</th>
+                <td>$500.00</td>
+                <td>$500.00</td>
+                <td>0.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <th>KNC/USD</th>
+                <td>$500.00</td>
+                <td>$550.00</td>
+                <td>10.00%</td>
+              </tr>
+              <tr>
+                <th scope="row">-</th>
+                <th>Total</th>
+                <td>$7,500.00</td>
+                <td>$7,738.50</td>
+                <td>9.54%</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+        </div>
+        <div class="col-lg-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-center col-lg-12 thickborders btn-dark">Breakeven Chart</h5>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-center col-lg-12 thickborders btn-dark">Portfolio Chart</h5>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-center col-lg-12 thickborders btn-dark">Preview (G/L)</h5>
+            </div>
+            <div class="col-lg-12">
+              <img id="bottomspace" class="img-fluid w-100 thickborders" src="img/Portfolio.png">
+            </div>
+            </table>
+            <div class="container-fluid">
+              <table class="table table-striped table-dark thickborders">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Cryto</th>
+                    <th scope="col">Cash</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">$7,738.50</th>
+                    <th>$0.00</th>
+                    <th>$7,738.50</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">100.00%</th>
+                    <th>0.00%</th>
+                    <th>100.00%</th>
+                  </tr>
+                </tbody>
+              </table> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <img class="img-fluid w-100" src="img/waterfall.png">
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <img class="img-fluid w-100" src="img/Transactions.png">
+    </div>
+  </div>
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
